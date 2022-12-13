@@ -5,5 +5,5 @@ from django.urls import include
 
 urlpatterns=[
     path('',views.index,name='index'),
-    path('api/',include('api.djangoapi.urls'))
+    path('api/',include('company.api.urls'))
 ]
