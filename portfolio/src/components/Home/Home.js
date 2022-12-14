@@ -33,7 +33,7 @@ export default function Home() {
         <img src="static/images/swb1.png" id="mountains_behind"/>
         <h2 className="text" id="text">Global Group Of Company</h2>
         {/* <a href="#" id="homebtn">Explore</a> */}
-        <img src="static/images/front1.png" id="mountains_front"/>
+        <img src="static/images/front.png" id="mountains_front"/>
       </section>
       <HomeContents/>
     </div>
