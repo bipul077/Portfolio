@@ -21,7 +21,7 @@ export default function header() {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><Link to="/contact">Contact Us</Link></li>
             </ul>
 
             <div className='main'>
