@@ -4,6 +4,9 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/Aboutus/About';
 import Contact from './components/Contact/Contact';
+import Alert from './components/Alert';
+import React,{useState} from 'react';
+
 import{
   BrowserRouter as Router,
   Routes,
@@ -11,14 +14,26 @@ import{
 } from 'react-router-dom';
 
 function App() {
+  const [alert,setAlert] = useState(null);
+
+  const showAlert=(message,type)=>{
+    setAlert({
+      msg:message,
+      type:type
+    })
+    setTimeout(()=>{
+      setAlert(null);
+    },2000);
+  }
   return (
     <>
     <Router>
     <Header/>
+    <Alert alert={alert}/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/about" element={<About/>}/>
-        <Route exact path="/contact" element={<Contact/>}/>
+        <Route exact path="/contact" element={<Contact showalert={showAlert}/>}/>
       </Routes>
     <Footer/>
     </Router>     

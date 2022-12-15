@@ -136,14 +136,12 @@
         width: 100%;
     }
 }
-<<<<<<< HEAD
 .validemail{
     color: red;
-=======
+}
 @media (max-width:480px) {
     .textC span{
         display: inline-block;
     }
-    
->>>>>>> ac20f598318a34cb74db7172ca07117f132c528e
 }
+    

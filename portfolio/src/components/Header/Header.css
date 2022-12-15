@@ -141,3 +141,14 @@ header{
 		background: rgba(0,0,0,.5);
 	}
 }
+.alert{
+	position: absolute;
+	top:7vh;
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin-bottom: 0;
+}
