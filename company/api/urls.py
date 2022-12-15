@@ -1,9 +1,8 @@
 from django.urls import path,include
-from company.api import views
+from . import views
 from rest_framework.routers import DefaultRouter
-
 router = DefaultRouter()
-router.register('contactapi',views.ContactModelViewSet,basename='contact')
+router.register('contactapi',views.ContactList,basename='contact')
 
 urlpatterns = [
     path('',include(router.urls)),
