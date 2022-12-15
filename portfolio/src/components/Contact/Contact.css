@@ -16,7 +16,7 @@
 }
 .contact .content{
     max-width: 800px;
-    textC-align: center;
+    text-align: center;
 }
 .contact .content h2{
     font-size:36px;
@@ -134,4 +134,7 @@
     .contactForm{
         width: 100%;
     }
+}
+.validemail{
+    color: red;
 }
