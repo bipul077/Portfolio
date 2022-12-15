@@ -5,10 +5,6 @@ export default function Contact() {
   return (
     <div>
         <section className="contact">
-            {/* <div class = "content">
-                <h2>Contact Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus purus arcu, consectetur sed pellentesque ac, consectetur ut risus. In facilisis elit vitae feugiat pretium. Vivamus libero purus, aliquet vitae ex et, ultricies egestas sapien. Aliquam pulvinar sem sit amet leo maximus pulvinar. Integer dictum augue nec gravida lacinia. Aliquam cursus venenatis efficitur. Praesent elementum eleifend venenatis. Aliquam faucibus sed enim eget fermentum.</p>                
-            </div> */}
             <div className="containerC">
                 <div className = "contactInfo">
                     <div className = "box">

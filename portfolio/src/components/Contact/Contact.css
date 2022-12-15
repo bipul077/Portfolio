@@ -125,7 +125,7 @@
         padding: 50px;
     }
     .containerC{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .containerC .contactInfo{
         margin-bottom: 40px;
