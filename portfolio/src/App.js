@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/Aboutus/About';
 import Contact from './components/Contact/Contact';
+import Services from './components/Services/Services';
 import Alert from './components/Alert';
 import React,{useState} from 'react';
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/about" element={<About/>}/>
+        <Route exact path="/services" element={<Services/>}/>
         <Route exact path="/contact" element={<Contact showalert={showAlert}/>}/>
       </Routes>
     <Footer/>
