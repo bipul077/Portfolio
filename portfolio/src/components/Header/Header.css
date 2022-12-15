@@ -115,11 +115,11 @@ header{
 		top: 100%;
 		right: -100%;
 		width: 270px;
-		background: var(--main-color);
+		/* background: var(--main-color); */
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		border-radius: 10px;
+		border-radius: 5px;
 		transition: all .50s ease;
 	}
 	.navbar a{
@@ -127,7 +127,7 @@ header{
 		margin: 12px 0;
 		padding: 0px 25px;
 		transition: all .50s ease;
-        color: var(--bg-color);
+        color: var(--text-color);
 	}
 	.navbar a:hover{
 		color: var(--text-color);
@@ -137,6 +137,7 @@ header{
 		color: var(--bg-color);
 	}
 	.navbar.open{
-		right: 2%;
+		right: 0%;
+		background: rgba(0,0,0,.5);
 	}
 }
