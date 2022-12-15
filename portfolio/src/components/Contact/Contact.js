@@ -18,7 +18,7 @@ export default function Contact() {
                         <div className = "icon"><i class="ri-mail-line"></i></div>
                         <div className = "textC">
                             <h3>Email</h3>
-                            <p>globalgroupofcompanyceooffice@gmail.com</p>
+                            <p>globalgroupofcompany<span>ceooffice@gmail.com</span></p>
                         </div>
                     </div>
                     <div className = "box">

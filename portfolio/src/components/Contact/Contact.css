@@ -123,6 +123,7 @@
 @media (max-width: 991px){
     .contact{
         padding: 50px;
+        padding-top: 80px;
     }
     .containerC{
         flex-direction: column-reverse;
@@ -134,4 +135,10 @@
     .contactForm{
         width: 100%;
     }
+}
+@media (max-width:480px) {
+    .textC span{
+        display: inline-block;
+    }
+    
 }
