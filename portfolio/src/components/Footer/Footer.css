@@ -15,18 +15,19 @@
     width: 100%;
     background: greenyellow;
     /* height: 130px; */
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .subcontainer .socialicon{
-    position: relative;
+    z-index: 1;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     flex-wrap: wrap;
 }
 .subcontainer .socialicon li{
@@ -45,7 +46,12 @@
 .text{
     text-align: center;
     color: black;
+    font-size: small;
 }
+.fa{
+    font-size: x-large;
+}
+
 .subcontainer p{
     color: black;
     text-align: center;
@@ -53,7 +59,7 @@
 }
 .subcontainer .wave{
     position: absolute;
-    top: -99px;
+    top: -70px;
     left: 0;
     width: 100%;
     height: 100px;
@@ -61,37 +67,25 @@
     background-size: 1000px 100px;
 }
 .subcontainer .wave#wave1{
-    z-index: 1000;
+    z-index: 1;
     opacity: 1;
     bottom: 0;
     animation: animateWave 4s linear infinite;
 }
 .subcontainer .wave#wave2{
-    z-index: 999;
+    z-index: 1;
     opacity: 0.5;
     bottom: 10px ;
     animation: animateWave02 4s linear infinite;
 }
-.subcontainer .wave#wave1{
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWave 4s linear infinite;
-}
-.subcontainer .wave#wave2{
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px ;
-    animation: animateWave02 4s linear infinite;
-} 
 .subcontainer .wave#wave3{
-    z-index: 1000;
+    z-index: 1;
     opacity: 0.2;
     bottom: 15px;
     animation: animateWave 3s linear infinite;
 }
 .subcontainer .wave#wave4{
-    z-index: 999;
+    z-index: 1;
     opacity: 0.7;
     bottom: 20px ;
     animation: animateWave02 3s linear infinite;
@@ -122,6 +116,16 @@
    .subcontainer p{
     margin-top: 10px;
    }
+   .subcontainer .socialicon li a{
+    margin: 0px;
+   }
+   .text{
+    font-size:x-small;
+    }
+    h6{
+        font-size: small;
+    }
+
 }
 .wave{
     padding-top: 5vh;
