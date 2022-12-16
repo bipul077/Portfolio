@@ -8,7 +8,7 @@ export default function Contact(props) {
   const[contactdata,setcontactdata]=useState({
     'uname':'',
     'email':'',
-    'message':'',
+    'message':''
   });
   const [emailError, setEmailError] = useState('')
 
@@ -44,7 +44,6 @@ export default function Contact(props) {
                     'uname':'',
                     'email':'',
                     'message':'',
-                    'status':'success'
                 });
             });
             props.showalert("Form has been submitted","success")

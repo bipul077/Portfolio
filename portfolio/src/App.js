@@ -7,7 +7,7 @@ import Contact from './components/Contact/Contact';
 import Alert from './components/Alert';
 import React,{useState} from 'react';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-
+import Services from './components/Services/Services';
 import{
   BrowserRouter as Router,
   Routes,
