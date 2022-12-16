@@ -8,21 +8,40 @@ export default function Contact(props) {
   const[contactdata,setcontactdata]=useState({
     'uname':'',
     'email':'',
-    'message':'',
-    'status':''
+    'message':''
   });
+  const [nameError, setnameError] = useState('')
   const [emailError, setEmailError] = useState('')
 
+  const validate = () => {
+    if(contactdata.uname.length == 0) {
+        setnameError('Name cant be empty');
+    }
+    if(contactdata.email.length == 0) {
+        setEmailError('Email cant be empty');
+    }
+    if(nameError || emailError ){
+        setnameError('');
+        setEmailError('');
+        return false;
+    }
+    return true;
+  }
 
   //Change Element value
   const handleChange=(event)=>{
-    // console.log(event.target.name,event.target.value)
+    if (event.target.name=='uname'){
+        let un = event.target.value
+        if (un.length>0) {
+            setnameError('')
+        }
+    }
     if (event.target.name=='email'){
-        let em = event.target.value;
-        if (validator.isEmail(em)) {
-            setEmailError('Valid Email')
-          } else {
-            setEmailError('Enter valid Email!')
+        let em = event.target.value
+        if (validator.isEmail(em)&&em.length>0) {
+            setEmailError('')
+        }else {
+            setEmailError('Invalid email')
           }
     }
     setcontactdata({
@@ -37,26 +56,25 @@ export default function Contact(props) {
     contactformdata.append("uname",contactdata.uname)
     contactformdata.append("email",contactdata.email)
     contactformdata.append("message",contactdata.message)
-    
+    console.log(contactdata.uname)
+    const isValid = validate();
     try{
-        if(emailError==='Valid Email'){
+        if(isValid){
             axios.post(baseUrl,contactformdata).then((response)=>{
                 setcontactdata({//for making the form empty after submitting
                     'uname':'',
                     'email':'',
-                    'message':'',
-                    'status':'success'
+                    'message':''
                 });
+                props.showalert("Form has been submitted","success")
             });
-            props.showalert("Form has been submitted","success")
         }
         else{
-            setcontactdata({'status':'error'})
-            props.showalert("Form has been submitted","danger")
+            props.showalert("Something went wrong!!","danger")
         }
     }catch(error){
-        console.log(error);
-        setcontactdata({'status':'error'})
+        // console.log(error);
+        props.showalert("Something went wrong","danger")
     }
   }
 
@@ -97,8 +115,9 @@ export default function Contact(props) {
                     {/* <form> */}
                         <h2>Send Message</h2>
                         <div className="inputBox">
-                            <input type="textC" name = "uname" required="required" onChange={handleChange} value={contactdata.uname}></input>
+                            <input type="textC" name = "uname" required onChange={handleChange} value={contactdata.uname}></input>
                             <span>Full Name</span>
+                            <p className="validemail">{nameError}</p>
                         </div>
                         <div className="inputBox">
                             <input type="textC" name = "email" required="required" onChange={handleChange}  value={contactdata.email}></input>

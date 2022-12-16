@@ -17,7 +17,7 @@ export default function Footer() {
           <li><a href="#"><i className='fa fa-youtube'></i></a></li>
         </ul>
         <div className="text">
-          <h2>Global Group of Company</h2>
+          <h4>Global Group of Company</h4>
           <p>@Copyright issue 2022</p>
         </div>
       </div>

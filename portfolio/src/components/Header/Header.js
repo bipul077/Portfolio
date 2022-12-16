@@ -16,11 +16,11 @@ export default function header() {
   return (
     <div>
         <header>
-            <a href = '#' className='logo'><i class="ri-home-7-line"></i><span>Logo</span></a>
+            <Link to="/" className='logo'><i class="ri-home-7-line"></i><span>Logo</span></Link>
             <ul className='navbar'>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
-                <li><a href="#">Services</a></li>
+                <li><Link to="/services">Services</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
             </ul>
 
