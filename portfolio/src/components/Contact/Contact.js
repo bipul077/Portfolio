@@ -9,7 +9,6 @@ export default function Contact(props) {
     'uname':'',
     'email':'',
     'message':'',
-    'status':''
   });
   const [emailError, setEmailError] = useState('')
 
@@ -51,12 +50,11 @@ export default function Contact(props) {
             props.showalert("Form has been submitted","success")
         }
         else{
-            setcontactdata({'status':'error'})
-            props.showalert("Form has been submitted","danger")
+            props.showalert("Something went wrong","danger")
         }
     }catch(error){
         console.log(error);
-        setcontactdata({'status':'error'})
+        props.showalert("Something went wrong","danger")
     }
   }
 

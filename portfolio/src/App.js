@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import Services from './components/Services/Services';
 import Alert from './components/Alert';
 import React,{useState} from 'react';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 import{
   BrowserRouter as Router,
@@ -29,6 +30,7 @@ function App() {
   return (
     <>
     <Router>
+      <ScrollToTop/>
     <Header/>
     <Alert alert={alert}/>
       <Routes>
