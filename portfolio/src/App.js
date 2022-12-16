@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/Aboutus/About';
 import Contact from './components/Contact/Contact';
-import Services from './components/Services/Services';
 import Alert from './components/Alert';
 import React,{useState} from 'react';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
