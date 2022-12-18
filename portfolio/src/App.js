@@ -27,7 +27,7 @@ function App() {
     },2000);
   }
   return (
-    <>
+    <div className="maincontent">
     <Router>
       <ScrollToTop/>
     <Header/>
@@ -40,7 +40,7 @@ function App() {
       </Routes>
     <Footer/>
     </Router>     
-    </>
+    </div>
   );
 }
 
