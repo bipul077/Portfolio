@@ -4,11 +4,10 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import About from './components/Aboutus/About';
 import Contact from './components/Contact/Contact';
-import Services from './components/Services/Services';
 import Alert from './components/Alert';
 import React,{useState} from 'react';
-import ScrollToTop from './components/Scroll/ScrollToTop';
-
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Services from './components/Services/Services';
 import{
   BrowserRouter as Router,
   Routes,
@@ -28,7 +27,7 @@ function App() {
     },2000);
   }
   return (
-    <>
+    <div className="maincontent">
     <Router>
       <ScrollToTop/>
     <Header/>
@@ -41,7 +40,7 @@ function App() {
       </Routes>
     <Footer/>
     </Router>     
-    </>
+    </div>
   );
 }
 
