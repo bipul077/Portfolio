@@ -31,6 +31,10 @@ header{
 	padding: 28px 12%;
 	transition: all .50s ease;
 }
+img, svg {
+    vertical-align: middle;
+    height: 40px;
+}
 .logo{
 	display: flex;
 	align-items: center;

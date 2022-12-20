@@ -16,7 +16,7 @@ export default function header() {
   return (
     <div>
         <header>
-            <Link to="/" className='logo'><i class="ri-home-7-line"></i><span>Logo</span></Link>
+            <Link to='/' className='logo'><img src="static/images/logotest.png"/></Link>
             <ul className='navbar'>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About Us</Link></li>
